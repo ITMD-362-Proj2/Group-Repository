@@ -29,6 +29,7 @@ p, input{
         align-items: center;
         justify-content: center;
     }
+    /* Login Page*/
     .login section{
         display: flex;
         align-items: center;
@@ -67,21 +68,35 @@ p, input{
         justify-content: center;
         flex-direction: column;
         display: none;
+        margin: 0px 40px;
+    }
+    #submit input{
+        background-color: #0F71F2;
+        color:#f2f2f2;
+        cursor: pointer;
+        padding: 20px 5vw;
+        border-radius: 20px;
+    }
+    #submit input:hover{
+        background-color: #58D5AC; 
     }
 /*Desktop*/
 @media screen and (min-width: 760px){
+    /* Login Page*/
     .login section{
         display: none;
     }
     .login #background section{
         display: contents;
-        text-align: center;
     }
     .login input{
         
     }
     .login #container{
         margin: 0 15%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .login #background{
         display: flex;
@@ -93,6 +108,7 @@ p, input{
 }
 /* Tablet */
 @media screen and (min-width: 760px) and (max-width: 1023px){
+    /* Login Page*/
     .login #background section{
         display: none;
     }

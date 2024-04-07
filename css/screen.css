@@ -55,7 +55,7 @@ p, input{
         color: #A6A6A6;
     }
     .login #mainSection{
-        width: 50%;
+        width: 100%;
         background-color: #282828;
         box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.82);
     }
@@ -89,8 +89,8 @@ p, input{
     .login #background section{
         display: contents;
     }
-    .login input{
-        
+    #submit input{
+        margin-top: 20%;
     }
     .login #container{
         margin: 0 15%;
@@ -105,17 +105,30 @@ p, input{
         margin-bottom: 22%;
         margin-top: 5%;
     }
+    .login #mainSection{
+        width: 50%;
+    }
 }
 /* Tablet */
-@media screen and (min-width: 760px) and (max-width: 1023px){
+@media screen and (min-width: 760px) and (max-width: 1320px){
     /* Login Page*/
-    .login #background section{
+    .login #background {
         display: none;
+        
     }
     .login #mainSection section{
         display: contents;
     }
-    .login #background{
-        display: flex;
+    .login #mainSection{
+        width:80%;
+        margin: 0% 5%;
+        flex: 1;
+    }
+    .login .logo{
+        margin-bottom: 8%;
+        margin-top: 5%;
+    }
+    .login form{
+        margin-top: 8%;
     }
 }

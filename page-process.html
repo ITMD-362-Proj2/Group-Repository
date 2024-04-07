@@ -6,12 +6,40 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no">
   <link rel="stylesheet" media="screen" href="css/meyersreset-and-normalize-form.css">
   <link rel="stylesheet" media="screen" href="css/screen.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Slab:wght@100..900&family=Young+Serif&display=swap" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="js/site.js"></script>
 </head>
-<body>
-  <div id="content">
-    
+<body class = "login">
+  <div class = "main">
+    <div id = "mainSection" >
+      <div class="logo">
+        <img src="images/logo-icon.png" alt="LindyPress logo" width="87" >
+        <img src="images/logo-title.png" alt="LindyPress title" width="304" >
+      </div>
+      <section>
+        <h2><strong>Create an account</strong></h2>
+        <h3>to make orders and get discounts!</h3>
+      </section>
+      <form name="login" method="get" action ="#null" autocomplete ="on">
+        <div id="container">
+          <input type="text" name="name" id="name" placeholder="Your name" required autocomplete="on">
+          <input type="email" id="email" name="email" required placeholder="Your email" autocomplete="on">
+          <input type="password" id="pass" name="password" required placeholder="Your password  (8 characters minimum)" minlength="8">
+          <div id="submit">
+            <input type="submit" value="Join Now">
+          </div>
+        </div>
+      </form>
+    </div>
+    <div id="background">
+      <section>
+        <h2><strong>Create an account</strong></h2>
+        <h3>to make orders and get discounts!</h3>
+      </section>
+    </div>  
   </div>
 </body>
 </html>

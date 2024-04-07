@@ -2,15 +2,154 @@
 .nojs h1{
     color: #c53833;
 }
-/* FONTS */
-
-/*Mobile*/
-
+/*Mobile (defaults)*/
+    body {
+        background-color:#282828 ;
+        color: #f2f2f2;
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /* FONTS */
+    h1{
+        font-family: "Young Serif", serif;
+        font-size: 11vw;
+    }
+    h2{
+        font-family: "Young Serif", serif;
+        font-size: 9vw;
+    }
+    h3{
+        font-family: "Roboto Slab", serif;
+        font-size: 5vw;
+    }
+    p, input{
+        font-family: "Lato", arial;
+        font-size: 4.2vw;
+    }
+    /* Login Page*/
+    .login .logo{
+        margin-bottom: 8%;
+        margin-top: 10%;
+    }
+    .login section{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .login .main{
+        display: flex;
+        align-items: stretch;
+        height: 100vh;
+        background-image: url(../images/bkg-bookshelf.png);
+        background-position-x: 100vw;
+    }
+    .login input{
+        box-sizing: border-box;
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 2%;
+        border: 0px;
+        border-radius: 15px;
+        margin-bottom: 4%;
+        background-color: #171717;
+        color: #A6A6A6;
+    }
+    .login #mainSection{
+        width: 100%;
+        background-color: #282828;
+    }
+    .login #background section{
+        display: none;
+    }
+    .login #background{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        display: none;
+        margin: 0px 40px;
+    }
+    #submit input{
+        background-color: #0F71F2;
+        color:#f2f2f2;
+        cursor: pointer;
+        padding: 20px 5vw;
+        border-radius: 20px;
+        margin-top: 10%;
+    }
+    #submit input:hover{
+        background-color: #58D5AC; 
+    }
+    .login form{
+        margin-top: 8%;
+        padding: 0px 10%;
+    }
 /*Desktop*/
 @media screen and (min-width: 760px){
-   
+    h1{
+        font-size: 7.594em;
+    }
+    h2{
+        font-size: 4.063em;
+    }
+    h3{
+        font-size: 2.305em;
+    }
+    p, input{
+        font-size: 2.20em;
+    }
+    /* Login Page*/
+    .login section{
+        display: none;
+    }
+    .login #background section{
+        display: contents;
+    }
+    #submit input{
+        margin-top: 20%;
+    }
+    .login #container{
+        margin: 0 15%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .login #background{
+        display: flex;
+    }
+    .login .logo{
+        margin-bottom: 22%;
+        margin-top: 5%;
+    }
+    .login #mainSection{
+        width: 50%;
+        box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.82);
+    }
+    .login form{
+        padding: 0px;
+    }
 }
 /* Tablet */
-@media screen and (min-width: 760px) and (max-width: 1023px){
+@media screen and (min-width: 760px) and (max-width: 1320px){
+    /* Login Page*/
+    .login #background {
+        display: none;
+    }
+    .login #mainSection section{
+        display: contents;
+    }
+    .login #mainSection{
+        width:80%;
+        margin: 0% 5%;
+        flex: 1;
+    }
+    .login .logo{
+        margin-bottom: 8%;
+        margin-top: 5%;
+    }
     
 }

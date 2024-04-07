@@ -1,0 +1,16 @@
+/*if JS not found */
+.nojs h1{
+    color: #c53833;
+}
+/* FONTS */
+
+/*Mobile*/
+
+/*Desktop*/
+@media screen and (min-width: 760px){
+   
+}
+/* Tablet */
+@media screen and (min-width: 760px) and (max-width: 1023px){
+    
+}

@@ -3,12 +3,31 @@
     color: #c53833;
 }
 /* FONTS */
-
-/*Mobile*/
-
+h1{
+    font-family: "Young Serif", serif;
+    font-size: 7.594em;
+}
+h2{
+    font-family: "Young Serif", serif;
+    font-size: 5.063em;
+}
+h3{
+    font-family: "Roboto Slab", serif;
+    font-size: 3.305em;
+}
+p, input{
+    font-family: "Lato", arial;
+    font-size: 2.25em;
+}
+/*Mobile (defaults)*/
+    body {
+        background-color:#282828 ;
+        color: #f2f2f2;
+        
+    }
 /*Desktop*/
 @media screen and (min-width: 760px){
-   
+    
 }
 /* Tablet */
 @media screen and (min-width: 760px) and (max-width: 1023px){

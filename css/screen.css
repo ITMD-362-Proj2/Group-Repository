@@ -39,6 +39,8 @@ p, input{
         display: flex;
         align-items: stretch;
         height: 100vh;
+        background-image: url(../images/bkg-bookshelf.png);
+        background-position-x: 100vw;
     }
     .login input{
         box-sizing: border-box;
@@ -51,16 +53,16 @@ p, input{
         background-color: #171717;
         color: #A6A6A6;
     }
-    
     .login #mainSection{
         width: 50%;
+        background-color: #282828;
+        box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.82);
     }
     .login #background section{
         display: none;
     }
     .login #background{
         flex: 1;
-        background-color: #c53833;
         display: flex;
         justify-content: center;
         flex-direction: column;

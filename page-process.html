@@ -9,9 +9,29 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="js/site.js"></script>
 </head>
-<body>
-  <div id="content">
-    
-  </div>
+<body class = "login">
+    <div id = "mainSection">
+      <div class="logo"></div>
+      <section>
+        <h2><strong>Create an account</strong></h2>
+        <h3>to make orders and get discounts!</h3>
+      </section>
+      <form name="login" method="get" action ="#null" autocomplete ="on">
+        <div id="container" class="fontsize">
+          <input type="text" name="name" id="name" placeholder="Your name" required autocomplete="on">
+          <input type="email" id="email" name="email" required placeholder="Your email" autocomplete="on">
+          <input type="password" id="pass" name="password" required placeholder="Your password  (8 characters minimum)" minlength="8">
+          <div id="submit">
+            <input type="submit" value="Join Now">
+          </div>
+        </div>
+      </form>
+    </div>
+    <div id="background">
+      <section>
+        <h2><strong>Create an account</strong></h2>
+        <h3>to make orders and get discounts!</h3>
+      </section>
+    </div>  
 </body>
 </html>

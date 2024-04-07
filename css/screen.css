@@ -2,23 +2,6 @@
 .nojs h1{
     color: #c53833;
 }
-/* FONTS */
-h1{
-    font-family: "Young Serif", serif;
-    font-size: 7.594em;
-}
-h2{
-    font-family: "Young Serif", serif;
-    font-size: 4.063em;
-}
-h3{
-    font-family: "Roboto Slab", serif;
-    font-size: 2.305em;
-}
-p, input{
-    font-family: "Lato", arial;
-    font-size: 2.20em;
-}
 /*Mobile (defaults)*/
     body {
         background-color:#282828 ;
@@ -29,7 +12,28 @@ p, input{
         align-items: center;
         justify-content: center;
     }
+    /* FONTS */
+    h1{
+        font-family: "Young Serif", serif;
+        font-size: 11vw;
+    }
+    h2{
+        font-family: "Young Serif", serif;
+        font-size: 9vw;
+    }
+    h3{
+        font-family: "Roboto Slab", serif;
+        font-size: 5vw;
+    }
+    p, input{
+        font-family: "Lato", arial;
+        font-size: 4.2vw;
+    }
     /* Login Page*/
+    .login .logo{
+        margin-bottom: 8%;
+        margin-top: 10%;
+    }
     .login section{
         display: flex;
         align-items: center;
@@ -57,7 +61,6 @@ p, input{
     .login #mainSection{
         width: 100%;
         background-color: #282828;
-        box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.82);
     }
     .login #background section{
         display: none;
@@ -76,12 +79,29 @@ p, input{
         cursor: pointer;
         padding: 20px 5vw;
         border-radius: 20px;
+        margin-top: 10%;
     }
     #submit input:hover{
         background-color: #58D5AC; 
     }
+    .login form{
+        margin-top: 8%;
+        padding: 0px 10%;
+    }
 /*Desktop*/
 @media screen and (min-width: 760px){
+    h1{
+        font-size: 7.594em;
+    }
+    h2{
+        font-size: 4.063em;
+    }
+    h3{
+        font-size: 2.305em;
+    }
+    p, input{
+        font-size: 2.20em;
+    }
     /* Login Page*/
     .login section{
         display: none;
@@ -107,6 +127,10 @@ p, input{
     }
     .login #mainSection{
         width: 50%;
+        box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.82);
+    }
+    .login form{
+        padding: 0px;
     }
 }
 /* Tablet */
@@ -114,7 +138,6 @@ p, input{
     /* Login Page*/
     .login #background {
         display: none;
-        
     }
     .login #mainSection section{
         display: contents;
@@ -128,7 +151,5 @@ p, input{
         margin-bottom: 8%;
         margin-top: 5%;
     }
-    .login form{
-        margin-top: 8%;
-    }
+    
 }

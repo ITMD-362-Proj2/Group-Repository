@@ -3,3 +3,6 @@ jQuery(function($) {
   $('html').removeClass('nojs');
   $("html").addClass("hasjs");
 });
+function validForm() {
+  alert("Thank you for Signing in!");
+}

@@ -11,14 +11,16 @@ function createHeader() {
   var currentLocation = window.location.pathname.split("/").pop();
   var header = document.createElement('header');
   header.innerHTML = `
-  <header>
     <nav id="main-navbar">
+      <div class="logo">
+        <img src="images/logo-icon.png" alt="LindyPress logo" width="67" >
+        <img src="images/logo-title.png" alt="LindyPress title" width="234" >
+      </div>
       <ul>
         <li id="option1"><a href="page-1.html">Shop</a></li>
         <li id="option2"><a href="page-2.html">About Us</a></li>
       </ul>
     </nav>
-  </header>
   `;
   var lastStr = currentLocation.substring(currentLocation.length-1);
   if(lastStr !="" && currentLocation.includes("index")==false){// Exclude the login page

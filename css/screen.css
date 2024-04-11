@@ -2,7 +2,7 @@
 .nojs h1{
     color: #c53833;
 }
-/*Mobile (defaults)*/
+/*Mobile (defaults)---------------------------------------------------------------------------------------------------------------*/
     body {
         background-color:#282828 ;
         color: #f2f2f2;
@@ -35,6 +35,8 @@
         font-family: "Lato", arial;
         color: #f2f2f2;
         text-decoration: none; 
+        padding: 1vw;
+        margin: 0px 2vw;
     }
     header li a:hover{
         color: #0F71F2;
@@ -42,7 +44,16 @@
     #main-navbar ul{
         display: flex;
     }
-    /* Login Page*/
+    #main-navbar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1% 7%;
+        box-shadow: 0px 0px 12px 7px rgba(0,0,0,0.75);
+        background-color: #333333;
+    }
+
+    /* Login Page-----------------------------------*/
     .login .logo{
         margin-bottom: 8%;
         margin-top: 10%;
@@ -101,7 +112,7 @@
         margin-top: 6vw;
         padding: 0px 10%;
     }
-    /* Store Page*/
+    /* Store Page-----------------------------------*/
     .store .list{
         display: flex;
         justify-content: center;
@@ -125,7 +136,8 @@
     .topicDark{
         background-color: #1D1D1D;
     }
-/*Desktop*/
+
+/*Desktop ---------------------------------------------------------------------------------------------------------------*/
 @media screen and (min-width: 760px){
     h1{
         font-size: 4.100em;
@@ -136,10 +148,19 @@
     h3{
         font-size: 2.305em;
     }
-    p, input, header li{
+    p, input{
         font-size: 2.20em;
     }
-    /* Login Page*/
+    header li{
+        font-size: 1.25em;
+    }
+    #main-navbar ul{
+        margin-left: 3vw;
+    }
+    #main-navbar{
+        justify-content: flex-start;
+    }
+    /* Login Page -----------------------------------*/
     .login section{
         display: none;
     }
@@ -175,9 +196,9 @@
     }
     
 }
-/* Tablet */
+/* Tablet ---------------------------------------------------------------------------------------------------------------*/
 @media screen and (min-width: 760px) and (max-width: 1320px){
-    /* Login Page*/
+    /* Login Page-----------------------------------*/
     .login #background {
         display: none;
     }

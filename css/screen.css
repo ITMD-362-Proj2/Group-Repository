@@ -46,11 +46,12 @@
     }
     #main-navbar{
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
-        justify-content: center;
         padding: 1% 7%;
         box-shadow: 0px 0px 12px 7px rgba(0,0,0,0.75);
         background-color: #333333;
+        justify-content: center;
     }
 
     /* Login Page-----------------------------------*/
@@ -198,6 +199,12 @@
 }
 /* Tablet ---------------------------------------------------------------------------------------------------------------*/
 @media screen and (min-width: 760px) and (max-width: 1320px){
+    header li a{
+        padding: 0px 4.6vw;
+    }
+    #main-navbar{
+        justify-content: space-between;
+    }
     /* Login Page-----------------------------------*/
     .login #background {
         display: none;

@@ -16,6 +16,7 @@
     h1{
         font-family: "Young Serif", serif;
         font-size: 11vw;
+        text-align: center;
     }
     h2{
         font-family: "Young Serif", serif;
@@ -88,10 +89,30 @@
         margin-top: 6vw;
         padding: 0px 10%;
     }
+    /* Store Page*/
+    .store .list{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 3%;
+    }
+   .book{
+        margin: 5% 5%;
+    }
+    .book img{
+        box-shadow: 0px 0px 14px 1px rgba(0,0,0,1);
+        margin: 10px 0px;
+    }
+    .book p{
+        margin: 15px 0px;
+    }
+    .store h1{
+        margin-top: 50px;
+    }
 /*Desktop*/
 @media screen and (min-width: 760px){
     h1{
-        font-size: 7.594em;
+        font-size: 4.100em;
     }
     h2{
         font-size: 4.063em;
@@ -132,6 +153,11 @@
     .login form{
         padding: 0px;
     }
+    /* Store Page*/
+    .book p{
+        font-size:1.50em;
+    }
+    
 }
 /* Tablet */
 @media screen and (min-width: 760px) and (max-width: 1320px){

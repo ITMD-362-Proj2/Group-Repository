@@ -30,6 +30,18 @@
         font-family: "Lato", arial;
         font-size: 4.2vw;
     }
+    /*Menu*/
+    header li a{
+        font-family: "Lato", arial;
+        color: #f2f2f2;
+        text-decoration: none; 
+    }
+    header li a:hover{
+        color: #0F71F2;
+    }
+    #main-navbar ul{
+        display: flex;
+    }
     /* Login Page*/
     .login .logo{
         margin-bottom: 8%;
@@ -124,7 +136,7 @@
     h3{
         font-size: 2.305em;
     }
-    p, input{
+    p, input, header li{
         font-size: 2.20em;
     }
     /* Login Page*/

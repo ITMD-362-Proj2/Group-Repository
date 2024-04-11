@@ -21,8 +21,7 @@ function createHeader() {
   </header>
   `;
   var lastStr = currentLocation.substring(currentLocation.length-1);
-  alert(lastStr)
-  if(lastStr !="/" && currentLocation.includes("index")==false){// Exclude the login page
+  if(lastStr !="" && currentLocation.includes("index")==false){// Exclude the login page
     document.body.prepend(header);//adds header
   }
   

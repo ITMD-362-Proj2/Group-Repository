@@ -10,6 +10,7 @@ function validForm() {
 function createHeader() {
   var currentLocation = window.location.pathname.split("/").pop();
   var header = document.createElement('header');
+  header.id = 'sticks';
   header.innerHTML = `
     <nav id="main-navbar">
       <div class="logo">
@@ -28,6 +29,17 @@ function createHeader() {
   }
   
 }
-
 // Call the function to create the header when the DOM content is loaded
 document.addEventListener('DOMContentLoaded', createHeader);
+
+//Sticky Header
+window.onscroll = function() {
+  var header = document.getElementById("sticks");
+  var sticky = header.offsetTop;
+
+    if (window.scrollY > sticky) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }
+  }

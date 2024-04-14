@@ -30,6 +30,12 @@
         font-family: "Lato", arial;
         font-size: 4.2vw;
     }
+    a:link {
+    color: #62b3ff;
+    }
+    #content a:visited {
+    color: #195FC9;
+    }
     /*Menu*/
     header li a{
         font-family: "Lato", arial;
@@ -206,6 +212,24 @@
     #support div{
         width: 100%;
     }
+    #links{
+        background-color: #58D5AC;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    #links p{
+        color: #161616;
+        overflow-wrap: break-word;
+    }
+    #links img{
+        height: 5vw;
+    }
+    #links div {
+        width: 100%;
+    }
+   
 /*Desktop ---------------------------------------------------------------------------------------------------------------*/
 @media screen and (min-width: 760px){
     h1{
@@ -310,6 +334,10 @@
     }
     #toAdd div{
         padding-left: 5%;
+    }
+    #links div {
+        width: 30%;
+        padding: 6% 2%
     }
     
 }

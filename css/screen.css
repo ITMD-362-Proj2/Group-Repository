@@ -164,6 +164,14 @@
     .about h3{
         margin-bottom: 0.5em;
     }
+    .about section{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    #onDemand img{
+        visibility: visible;
+    }
     
 /*Desktop ---------------------------------------------------------------------------------------------------------------*/
 @media screen and (min-width: 760px){
@@ -225,6 +233,32 @@
     .book p{
         font-size:1.50em;
     }
+    /* About Page-----------------------------------*/
+    .about section{
+        padding:0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .about section div{
+        box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.82);
+        background-color: #282828;
+        padding: 6% 10%;
+        width: 50%;
+    }
+    #aboutUs{
+        padding: 2% 0;
+    }
+    #onDemand{
+        background-image: url(../images/bookshelf.png);
+        background-position-x: 100vw;
+        background-size: contain;
+        
+    }
+    #onDemand img{
+        visibility: hidden;
+        width: 0;
+    }
     
 }
 /* Tablet ---------------------------------------------------------------------------------------------------------------*/
@@ -251,5 +285,5 @@
         margin-bottom: 5vw;
         margin-top: 5%;
     }
-    
+
 }

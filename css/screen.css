@@ -59,7 +59,7 @@
         width: 100%;
       }
     .sticky + #content {
-    padding-top: 9.9vh;
+        padding-top: 9.9vh;
     }
     /*Footer*/
     #main-footer{
@@ -160,7 +160,11 @@
     .topicDark{
         background-color: #1D1D1D;
     }
-
+    /* About Page-----------------------------------*/
+    .about h3{
+        margin-bottom: 0.5em;
+    }
+    
 /*Desktop ---------------------------------------------------------------------------------------------------------------*/
 @media screen and (min-width: 760px){
     h1{
@@ -173,7 +177,7 @@
         font-size: 2.305em;
     }
     p, input{
-        font-size: 2.20em;
+        font-size: 1.25em;
     }
     header li{
         font-size: 1.25em;

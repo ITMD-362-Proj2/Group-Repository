@@ -161,7 +161,10 @@
         background-color: #1D1D1D;
     }
     /* About Page-----------------------------------*/
-    .about h3{
+    .about{
+        background-color: #1D1D1D;
+    }
+    .about h3, #support h2{
         margin-bottom: 0.5em;
     }
     .about section{
@@ -176,8 +179,10 @@
         width: 45vw;
         box-shadow: 0px 0px 14px 1px rgba(0,0,0,1);
     }
+    #onDemand{
+        background-color: #282828;
+    }
     #aboutUs{
-        background-color: #1D1D1D;
         padding: 2% 0%;
     }
     .about p{
@@ -193,6 +198,13 @@
     }
     #toAdd #note{
         margin-top: 5%;
+    }
+    #support h2{
+        text-align: center;
+        color: #58D5AC;
+    }
+    #support div{
+        width: 100%;
     }
 /*Desktop ---------------------------------------------------------------------------------------------------------------*/
 @media screen and (min-width: 760px){
@@ -276,14 +288,14 @@
     }
     #onDemand div{
         box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.82);
-        background-color: #282828;
         width: 50%;
+        background-color: #282828;
     }
     #onDemand img{
         visibility: hidden;
         width: 0;
     }
-    #toAdd{
+    #toAdd, #support{
         justify-content: center;
     }
     #toAdd img{
@@ -292,8 +304,9 @@
     }
     #toAdd #note{
         margin: 5%;
+        margin-top: 0;
         text-align: center;
-        width: 50%;
+        width: 60%;
     }
     #toAdd div{
         padding-left: 5%;

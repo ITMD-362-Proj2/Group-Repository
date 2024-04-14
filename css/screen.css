@@ -229,6 +229,12 @@
     #links div {
         width: 100%;
     }
+    #links h3{
+        color: #f2f2f2f0;
+        width: 100%;
+        text-align: center;
+        margin-top: 2%;
+    }
    
 /*Desktop ---------------------------------------------------------------------------------------------------------------*/
 @media screen and (min-width: 760px){

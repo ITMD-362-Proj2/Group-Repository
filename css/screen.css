@@ -24,7 +24,8 @@
     }
     h3{
         font-family: "Roboto Slab", serif;
-        font-size: 5vw;
+        font-size: 2.305em;
+        word-wrap: break-word;
     }
     p, input{
         font-family: "Lato", arial;
@@ -143,20 +144,45 @@
         padding: 0px 10%;
     }
     /* Store Page-----------------------------------*/
-    .store .list{
+    .store .list {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         flex-wrap: wrap;
         margin: 0 3%;
     }
-   .book{
-        margin: 5% 5%;
+    
+    .book {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 50px;
+        width: 1px;
     }
-    .book img{
+    
+    .book img {
+        width: 100%;
+        height: auto;
         box-shadow: 0px 0px 14px 1px rgba(0,0,0,1);
-        margin: 10px 0px;
         cursor: pointer;
     }
+    
+    .book h3, .book p {
+        font-size: 1.5em;
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    /* Additional responsive adjustments for larger screens */
+    @media screen and (min-width: 760px) {
+        .store .list {
+            justify-content: space-between;
+        }
+
+        .book {
+            width: 250px;
+        }
+    }
+
     .book p{
         margin: 15px 0px;
     }
@@ -246,6 +272,7 @@
     }
     h3{
         font-size: 2.305em;
+        word-wrap: break-word;
     }
     p, input, .about p{
         font-size: 1.25em;

@@ -238,30 +238,35 @@
     #support div{
         width: 100%;
     }
-    #links{
+    #links {
+        text-align: center;
         background-color: #58D5AC;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        align-items: flex-start;
     }
     #links p{
-        color: #161616;
+        color: #ffffff;
         overflow-wrap: break-word;
     }
     #links img{
-        height: 5vw;
+        height: 10vw;
+        padding-right:2%;
+        padding-left: 2%;
     }
     #links div {
         width: 100%;
     }
-    #links h3{
-        color: #f2f2f2f0;
-        width: 100%;
-        text-align: center;
-        margin-top: 2%;
+    #links h3 {
+        color: #f2f2f2;
     }
-   
+    #links h4 {
+        font-size: 25px;
+        word-wrap: break-word;
+    }
+    .cryptoinfo {
+        max-width: 400px;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
 /*Desktop ---------------------------------------------------------------------------------------------------------------*/
 @media screen and (min-width: 760px){
     h1{
@@ -368,11 +373,17 @@
     #toAdd div{
         padding-left: 5%;
     }
-    #links div {
-        width: 30%;
-        padding: 6% 2%
+    #links{
+        background-color: #0f125b;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-items: flex-start;
     }
-    
+    #links p{
+        color: #161616;
+        overflow-wrap: break-word;
+    }
 }
 /* Tablet ---------------------------------------------------------------------------------------------------------------*/
 @media screen and (min-width: 760px) and (max-width: 1320px){

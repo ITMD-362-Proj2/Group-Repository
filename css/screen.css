@@ -24,7 +24,7 @@
     }
     h3{
         font-family: "Roboto Slab", serif;
-        font-size: 2.305em;
+        font-size: 5vw;
         word-wrap: break-word;
     }
     p, input{
@@ -152,11 +152,8 @@
     }
     
     .book {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 50px;
-        width: 1px;
+        margin: 5% 5%;
+        width: 200px;
     }
     
     .book img {

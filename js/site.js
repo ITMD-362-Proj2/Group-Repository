@@ -33,12 +33,10 @@ function createHeader() {
     <img src="images/cards.png" alt="Credit card icons" height="30px" >
   </nav>
   `
-
+document.body.prepend(header);//adds header
   if(lastStr !="" && currentLocation.includes("index")==false){// Exclude the login page
-    document.body.prepend(header);//adds header
     document.body.append(footer);//adds footer
   }
-  
 }
 // Call the function to create the header and footer when the DOM content is loaded
 document.addEventListener('DOMContentLoaded', createHeader);
@@ -48,9 +46,14 @@ window.onscroll = function() {
   var header = document.getElementById("sticks");
   var sticky = header.offsetTop;
 
+  var currentLocation = window.location.pathname.split("/").pop();
+  var lastStr = currentLocation.substring(currentLocation.length-1);
+  if(lastStr !="" && currentLocation.includes("index")==false){// Exclude the login page
     if (window.scrollY > sticky) {
       header.classList.add("sticky");
-    } else {
+    } 
+    else {
       header.classList.remove("sticky");
     }
+  }
   }

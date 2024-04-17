@@ -71,9 +71,10 @@
         top: 0;
         width: 100%;
       }
-    .sticky + #content {
+    .sticky + #content{
         padding-top: 9.9vh;
     }
+
     
     /*Footer*/
     #main-footer{
@@ -92,7 +93,7 @@
     }
 
     /* Login Page-----------------------------------*/
-    .login .logo{
+    .login #mainSection .logo{
         margin-bottom: 8%;
         margin-top: 10%;
     }
@@ -149,6 +150,11 @@
     .login form{
         margin-top: 6vw;
         padding: 0px 10%;
+    }
+    .login #main-navbar{
+        position: fixed;
+        top: 0;
+        width: -webkit-fill-available;
     }
     /* Store Page-----------------------------------*/
     .store .list {
@@ -312,9 +318,9 @@
     .login #background{
         display: flex;
     }
-    .login .logo{
-        margin-bottom: 22%;
-        margin-top: 5%;
+    .login #mainSection .logo{
+        margin-bottom: 20%;
+        margin-top: 20%;
     }
     .login #mainSection{
         width: 50%;
@@ -408,9 +414,9 @@
         margin: 0% 5%;
         flex: 1;
     }
-    .login .logo{
+    .login #mainSection .logo{
         margin-bottom: 5vw;
-        margin-top: 5%;
+        margin-top: 13%;
     }
     /* About Page-----------------------------------*/
     

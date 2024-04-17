@@ -239,7 +239,7 @@
     }
     #links {
         text-align: center;
-        background-color: #58D5AC;
+        background-color: #6bd090;
     }
     #links p{
         color: #ffffff;
@@ -382,14 +382,12 @@
         padding-left: 5%;
     }
     #links{
-        background-color: #0f125b;
         display: flex;
         align-items: center;
         justify-content: center;
         align-items: flex-start;
     }
     #links p{
-        color: #161616;
         overflow-wrap: break-word;
     }
 }

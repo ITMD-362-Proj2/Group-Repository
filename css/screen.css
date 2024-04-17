@@ -58,7 +58,13 @@
         padding: 0.7% 7%;
         box-shadow: 0px 0px 12px 7px rgba(0,0,0,0.75);
         background-color: #333333;
-        justify-content: center;
+        justify-content: space-between;
+    }
+    #main-navbar #icon{
+        width: 6vw;
+    }
+    #main-navbar #title{
+        width: 30vw;
     }
     .sticky {
         position: fixed;
@@ -68,6 +74,7 @@
     .sticky + #content {
         padding-top: 9.9vh;
     }
+    
     /*Footer*/
     #main-footer{
         display: flex;
@@ -280,6 +287,12 @@
     #main-footer p{
         font-size: 1.25em;
     }
+    #main-navbar #icon{
+        width: 67px;
+    }
+    #main-navbar #title{
+        width: 234px;
+    }
     /* Login Page -----------------------------------*/
     .login section{
         display: none;
@@ -316,6 +329,7 @@
     }
     .store .list {
         justify-content: space-between;
+    }
     /* About Page-----------------------------------*/
     .about section{
         padding:0;
@@ -380,6 +394,7 @@
     }
     #main-navbar{
         justify-content: space-between;
+        padding: 0.7% 6%;
     }
     /* Login Page-----------------------------------*/
     .login #background {

@@ -14,8 +14,8 @@ function createHeader() {
   header.innerHTML = `
     <nav id="main-navbar">
       <div class="logo">
-        <img src="images/logo-icon.png" alt="LindyPress logo" width="67" >
-        <img src="images/logo-title.png" alt="LindyPress title" width="234" >
+        <img id="icon" src="images/logo-icon.png" alt="LindyPress logo" width="67" >
+        <img id="title"src="images/logo-title.png" alt="LindyPress title" width="234" >
       </div>
       <ul>
         <li id="option1"><a href="page-1.html">Shop</a></li>

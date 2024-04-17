@@ -14,8 +14,8 @@ function createHeader() {
   header.innerHTML = `
     <nav id="main-navbar">
       <div class="logo">
-        <img src="images/logo-icon.png" alt="LindyPress logo" width="67" >
-        <img src="images/logo-title.png" alt="LindyPress title" width="234" >
+        <img id="icon" src="images/logo-icon.png" alt="LindyPress logo" width="67" >
+        <img id="title"src="images/logo-title.png" alt="LindyPress title" width="234" >
       </div>
       <ul>
         <li id="option1"><a href="page-1.html">Shop</a></li>
@@ -33,12 +33,10 @@ function createHeader() {
     <img src="images/cards.png" alt="Credit card icons" height="30px" >
   </nav>
   `
-
+document.body.prepend(header);//adds header
   if(lastStr !="" && currentLocation.includes("index")==false){// Exclude the login page
-    document.body.prepend(header);//adds header
     document.body.append(footer);//adds footer
   }
-  
 }
 // Call the function to create the header and footer when the DOM content is loaded
 document.addEventListener('DOMContentLoaded', createHeader);
@@ -48,9 +46,14 @@ window.onscroll = function() {
   var header = document.getElementById("sticks");
   var sticky = header.offsetTop;
 
+  var currentLocation = window.location.pathname.split("/").pop();
+  var lastStr = currentLocation.substring(currentLocation.length-1);
+  if(lastStr !="" && currentLocation.includes("index")==false){// Exclude the login page
     if (window.scrollY > sticky) {
       header.classList.add("sticky");
-    } else {
+    } 
+    else {
       header.classList.remove("sticky");
     }
+  }
   }

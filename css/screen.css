@@ -37,6 +37,10 @@
     #content a:visited {
     color: #195FC9;
     }
+     li{
+        font-family: "Young Serif", serif;
+        font-size: 6vw;
+     }
     /*Menu*/
     header li a{
         font-family: "Lato", arial;
@@ -169,6 +173,7 @@
     width: 1em;
     margin-left: -1em; 
   }
+
     /* Store Page-----------------------------------*/
     .store .list {
         display: flex;

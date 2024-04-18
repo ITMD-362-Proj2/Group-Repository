@@ -156,6 +156,19 @@
         top: 0;
         width: -webkit-fill-available;
     }
+
+  #why {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  #why li:before {
+    content: "\2022"; 
+    color: #ffffff;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em; 
+  }
     /* Store Page-----------------------------------*/
     .store .list {
         display: flex;

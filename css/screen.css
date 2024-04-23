@@ -157,18 +157,26 @@
         width: -webkit-fill-available;
     }
 
-  #why {
-    list-style-type: none;
-    padding-left: 0;
-  }
+    #why {
+        font-family: "Lato", arial;
+        font-size: 1.2vw;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        align-content: center;
+    }
 
-  #why li:before {
-    content: "\2022"; 
-    color: #ffffff;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em; 
-  }
+    #why li:before {
+        content: "\2022"; 
+        color: #ffffff;
+        display: inline-block;
+        width: 1em;
+        margin-left: 3em; 
+    }
+    #why li{
+        margin-top: 10px;
+    }
     /* Store Page-----------------------------------*/
     .store .list {
         display: flex;
